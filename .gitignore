@@ -2,19 +2,6 @@ tmp
 /target/
 /book/book/
 /out/
-/my-agent.zip
+/run_output/
+*.zip
 .env
-xtask/target/
-xtask/Cargo.lock
-
-# Golden run artifacts: the tests only read decisions.csv and score_report.json.
-# The rest are large byproducts of the Python golden runs (HTML replays, the
-# agent's stderr capture, scratch dirs, the bulky workflow result envelope).
-tests/golden/*/decision_replay.html
-tests/golden/*/agent.log
-tests/golden/*/scratch/
-tests/golden/*/workflow_result.json
-tests/golden-reference/*/decision_replay.html
-tests/golden-reference/*/agent.log
-tests/golden-reference/*/scratch/
-tests/golden-reference/*/workflow_result.json
